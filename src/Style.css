@@ -1,0 +1,344 @@
+.firstblock{
+    padding-left: 23px;
+    position: fixed;
+    left: -2%;
+  }
+  .imj{
+      height: 48px;
+      width: 37px;
+      font-size:25px;
+  }
+  .insta{
+      margin: 19px;
+      color: black;
+  }
+  .block{
+      border-right: 1px solid rgb(174, 172, 172);
+      padding: 15px;
+      
+  }
+  .lst{
+      list-style: none;
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+  }
+  .actress{
+    border: 2px solid red;
+    border-radius: 80%;
+    align-items: stretch;
+    flex-direction: column;
+    flex-shrink: 0;
+    vertical-align: baseline;
+    width: 100%;
+  }
+  .text{
+      font-size: 11px;
+  
+  }
+  .pp{
+      border: none;
+      font-size:25px;
+  }
+  .thirdcol{
+      border-left: 1px solid gray;
+      position: fixed;
+      left: 70%;
+  }
+  .acc{
+  flex-direction: column;
+  flex-shrink: 0;
+  border: 2px solid red;
+  border-radius: 80%;
+  margin: 14px;
+  width: 100%;
+  }
+  
+  .tt{
+    border: 22px;
+    justify-content: center;
+    margin: 18px;
+    font-weight:bold;
+  }
+  .tcheck{
+    margin: 23px;
+  }
+  .bb{
+    justify-content: center;
+    width: 86%;
+  }
+  .ttt{
+    justify-content: center;
+    margin: 18px;
+    color: gray;
+  
+  }
+  /* Other Coding css  */
+  .topbox img{
+    height: 100%;
+  }
+  .topbox{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border:linear-gradient(45deg, red, blue);
+    border-radius: 50%;
+    /* display: block; */
+    overflow: hidden;
+  }
+  .topbox::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* left: 10px; */
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(45deg, red, blue);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  .chekk{
+    padding: 18px;
+  }
+  .idd{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    }
+  .sugst{
+    color: gray;
+  }
+  .bcc{
+    border: 2px solid red;
+    border-radius: 80%;
+    width: 100%;
+  }
+  .flw{
+    color: rgb(14, 14, 88);
+  }
+  .imgg{
+    height: auto;
+    width: 40%;
+    border: none;
+  }
+  .card{
+    border: none;
+    box-shadow: none;
+  }
+  .carouselslide img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(45deg, red, blue);
+  }
+  .nam{
+    text-align: center;
+    font-size:1rem;
+    font-weight: bold;
+  }
+  /* insta slider */
+  .entry-header {
+    .container-fluid {
+      padding: 0;
+    }
+  }
+  .slidewrapper {
+    display: block;
+    position: relative;
+  }
+  .headslide {
+    .imgslide {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .slick-prev {
+      z-index: 2;
+      left: 15px;
+    }
+    .slick-next {
+      z-index: 3;
+      right: 15px;
+    }
+  }
+  .carouselslide {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .card {
+      position: relative;
+      margin: 1rem;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: -2px -2px 6px rgba(128, 128, 128, 0.1),
+        2px 2px 6px rgba(0, 0, 0, 0.1);
+      .card-body {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 1rem;
+        .card-title {
+          font-size: 1rem;
+          color: white;
+        }
+        .card-text {
+          font-size: 0.85rem;
+          color: whitesmoke;
+        }
+      }
+    }
+    .slick-prev {
+      z-index: 2;
+      left: 15px;
+    }
+    .slick-next {
+      z-index: 3;
+      right: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carouselslide {
+      .card {
+        .card-body {
+          color: #444;
+          position: relative;
+          display: block;
+          .card-title {
+            color: #444;
+          }
+          .card-text {
+            color: #444;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .carouselslide {
+      .card {
+        .card-body {
+          .card-title {
+            transition: all 0.5s ease-in-out;
+          }
+          .card-text {
+            transition: all 0.5s ease-out;
+            visibility: hidden;
+            display: none;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          box-shadow: -4px -4px 9px rgba(128, 128, 128, 0.3),
+            4px 4px 9px rgba(0, 0, 0, 0.3);
+          .card-body {
+            transition: all 0.3s ease-in-out;
+            margin: 0;
+            top: 0;
+            bottom: auto;
+            min-height: 100%;
+            right: 0;
+            left: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 0;
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            .card-text {
+              visibility: visible;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /* Extra for slides */
+  .legend{
+    border: 2px solid black;
+    background-color: yellowgreen;
+  }
+
+  .home {
+    background-color: #fafafa;
+    min-height: 100vh;
+    padding-top: 30px;
+  }
+
+  .main-content {
+    max-width: 614px;
+    margin: 0 auto;
+  }
+
+  .suggestions {
+    position: fixed;
+    width: 300px;
+    padding: 20px;
+  }
+
+  .suggestions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .suggestions-header h4 {
+    color: #8e8e8e;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .suggestions-header button {
+    background: none;
+    border: none;
+    color: #262626;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .post {
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  .story-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .suggestions {
+      display: none;
+    }
+    
+    .main-content {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-content {
+      width: 100%;
+    }
+  }
