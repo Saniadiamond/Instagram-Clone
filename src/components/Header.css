@@ -1,0 +1,191 @@
+.header-container {
+  height: 100vh;
+  border-right: 1px solid #dbdbdb;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 245px;
+  background: #fff;
+  z-index: 1000;
+}
+
+.nav-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 8px 12px 20px;
+}
+
+.logo {
+  padding: 25px 12px 16px;
+  margin-bottom: 19px;
+}
+
+.instagram-logo {
+  width: 103px;
+  height: auto;
+}
+
+.nav-menu {
+  flex: 1;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 4px 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f2f2f2;
+}
+
+.nav-link svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.nav-link span {
+  font-size: 16px;
+}
+
+.more-menu {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.create-button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.more-button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.more-button:hover {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.more-button svg {
+  margin-right: 16px;
+  width: 24px;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1264px) {
+  .header-container {
+    width: 72px;
+  }
+  
+  .nav-link span {
+    display: none;
+  }
+  
+  .logo {
+    padding: 25px 0 16px;
+  }
+  
+  .instagram-logo {
+    display: none;
+  }
+  
+  .logo::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../assets/instagram-icon.svg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    border-top: 1px solid #dbdbdb;
+    border-right: none;
+  }
+
+  .nav-sidebar {
+    padding: 0;
+  }
+
+  .logo, .more-menu {
+    display: none;
+  }
+
+  .nav-menu {
+    padding: 0;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+  }
+
+  .nav-menu li {
+    margin: 0;
+  }
+
+  .nav-link {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav-link svg {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+  }
+}

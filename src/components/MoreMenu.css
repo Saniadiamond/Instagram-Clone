@@ -1,0 +1,71 @@
+.more-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.more-menu {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.more-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  text-decoration: none;
+  color: #262626;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.more-menu-item:hover {
+  background-color: #f8f8f8;
+}
+
+.more-menu-item svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+.more-menu-item span {
+  flex: 1;
+}
+
+.menu-divider {
+  height: 1px;
+  background-color: #dbdbdb;
+  margin: 8px 0;
+}
+
+.logout-button {
+  color: #ed4956;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .more-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: none;
+    border-radius: 12px 12px 0 0;
+  }
+}

@@ -1,0 +1,156 @@
+.search-page {
+  padding: 20px;
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+.search-container {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 397px;
+}
+
+.search-header {
+  padding: 24px 24px 8px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.search-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.search-input-container {
+  padding: 8px 16px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.search-input-wrapper {
+  position: relative;
+  background-color: #efefef;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-wrapper input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+.search-icon {
+  color: #8e8e8e;
+  font-size: 16px;
+}
+
+.clear-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #c7c7c7;
+}
+
+.search-content {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.recent-header span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.clear-all {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.search-item:hover {
+  background-color: #fafafa;
+}
+
+.search-item-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.search-item-image {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.search-item-info {
+  flex: 1;
+}
+
+.search-item-name {
+  font-weight: 600;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.verified-badge {
+  color: #0095f6;
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.search-item-description {
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  padding: 8px;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.remove-item:hover {
+  color: #262626;
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    max-width: 100%;
+    border: none;
+  }
+  
+  .search-page {
+    padding: 0;
+  }
+}

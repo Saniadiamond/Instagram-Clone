@@ -1,0 +1,175 @@
+.footer-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 320px;
+  padding: 20px 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.current-user {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.current-user img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-info p {
+  margin: 4px 0 0;
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.switch-button {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.suggestions-section {
+  padding: 4px 16px;
+}
+
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.suggestions-header h3 {
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.see-all {
+  color: #262626;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.suggestion-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.suggestion-left img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.suggestion-info {
+  flex: 1;
+}
+
+.suggestion-info h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.suggestion-info p {
+  margin: 4px 0 0;
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.follow-button {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.footer-links {
+  padding: 24px 16px;
+}
+
+.footer-links nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.footer-links a {
+  color: #c7c7c7;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-links span {
+  color: #c7c7c7;
+  margin: 0 4px;
+}
+
+.copyright {
+  padding: 16px;
+  color: #c7c7c7;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1264px) {
+  .footer-container {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    display: none;
+  }
+}
+
+/* Show suggestions in feed for mobile */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    margin-bottom: 70px; /* Space for mobile navigation */
+  }
+
+  .footer-links {
+    display: none;
+  }
+}
