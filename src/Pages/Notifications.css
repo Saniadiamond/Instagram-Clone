@@ -1,0 +1,156 @@
+.notifications-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.notifications-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.notifications-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.section-header {
+  padding: 16px 0;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  margin: 0;
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.notification-avatar {
+  margin-right: 12px;
+}
+
+.notification-avatar img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.notification-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-text {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.username {
+  font-weight: 600;
+  color: #262626;
+}
+
+.message {
+  color: #262626;
+}
+
+.time {
+  color: #8e8e8e;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.notification-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.confirm-button {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #1877f2;
+}
+
+.delete-button {
+  background-color: transparent;
+  color: #262626;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #fafafa;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #262626;
+  padding: 8px;
+  margin-right: 12px;
+}
+
+.back-button:hover {
+  opacity: 0.7;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 935px) {
+  .notifications-container {
+    flex-direction: column;
+  }
+
+  .user-info {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .notifications-container {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .notifications-content {
+    border: none;
+    border-radius: 0;
+  }
+}
